@@ -32,7 +32,7 @@ export const SocketProvider = ({ children }) => {
   }, []);
 
   useEffect(() => {
-    const _socket = io("http://localhost:8000");
+    const _socket = io("http://65.2.11.146:8000");
     _socket.on("message", onMsgReceive);
     setSocket(_socket);
     return () => {
